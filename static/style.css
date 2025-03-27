@@ -173,7 +173,7 @@ nav li a:active {
 }
 
 /***********************/
-/* HAMBURGER MENU ANIMATION */
+/* MENU ANIMATION */
 /***********************/
 
 .hamburger-menu {
@@ -254,7 +254,6 @@ section#home {
 /* MEDIA QUERY */
 /**************************/
 
-/* BELOW 832px (Tablets) */
 @media (max-width: 52em) {
   html {
     /* 8px / 16px = 0.5 = 50% */
@@ -262,7 +261,6 @@ section#home {
   }
 }
 
-/* BELOW 600px (Phones) */
 @media (max-width: 37em) {
   .hamburger-menu {
     top: 0.5rem;
