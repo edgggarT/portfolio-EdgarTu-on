@@ -40,3 +40,11 @@ hamburgerMenu.addEventListener("click", toggleNav);
 navItems.forEach((nav) => {
   nav.addEventListener("click", toggleNav);
 });
+
+
+function scrollDown() {
+  window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+  });
+}
