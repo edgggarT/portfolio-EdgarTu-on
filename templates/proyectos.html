@@ -7,7 +7,58 @@
 </head>
 <body>
     {% extends 'base.html' %}
+    {% block content %}
+    <section id="portfolio" class="portfolio section">
 
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="description-title">Proyectos</span>
+          <h2>Proyectos</h2>
+          <p>Estos son algunos de los proyectos:</p>
+        </div><!-- End Section Title -->
+        <div class="container-fluid">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-xl-3 col-lg-4 col-md-2 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="https://blog.goodbarber.com/photo/gal/pic/gal-25193120.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-app" class="glightbox preview-link">Desarrollo de aplicaciones</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+  
+              <div class="col-xl-3 col-lg-4 col-md-2 portfolio-item isotope-item filter-product">
+                <div class="portfolio-content h-100">
+                  <img src="https://www.uplers.com/wp-content/uploads/2021/12/shutterstock_1918015178-Converted.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p class="glightbox preview-link">Creacion de paginas web</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+  
+              <div class="col-xl-3 col-lg-4 col-md-2 portfolio-item isotope-item filter-branding">
+                <div class="portfolio-content h-100">
+                  <img src="https://zibtek-ghost-blog.sfo3.cdn.digitaloceanspaces.com/2022/03/Database-Development-Processes.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-branding" class="glightbox preview-link">Creacion de bases de datos</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+  
+              <div class="col-xl-3 col-lg-4 col-md-2 portfolio-item isotope-item filter-books">
+                <div class="portfolio-content h-100">
+                  <img src="https://static.vecteezy.com/system/resources/previews/009/189/185/non_2x/human-resources-automation-workforce-employment-social-crisis-automation-development-to-optimize-human-resource-necessity-artificial-intelligence-domination-developer-create-open-robotic-soft-vector.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <p data-gallery="portfolio-gallery-book" class="glightbox preview-link">Automatizacion</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+            </div><!-- End Portfolio Container -->
+          </div>
+        </div>
+    </section>
+    {% endblock %}
 
 </body>
 </html>

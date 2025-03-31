@@ -1,13 +1,30 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
+
+app.secret_key = 'CLAVE_SECRETA_0011'
+
 
 @app.route('/')
 def inicio():
     return render_template('index.html', nav_title="inicio")
 
-@app.route('/contactame')
+@app.route('/contactame', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        nombre = request.form.get('name')
+        email = request.form.get('email')
+        asunto = request.form.get('subject')
+        mensaje = request.form.get('message')
+        if not nombre or not email or not asunto or not mensaje:
+            flash("Por favor completa todos los campos")
+            return render_template('contactame.html', nav_title="contacto")
+        else:
+            flash("Mensaje enviado correctamente")
+            print("Nombre: ", nombre)
+            print("Email: ", email)
+            print("Asunto: ", asunto)
+            print("Mensaje: ", mensaje)
     return render_template('contactame.html', nav_title="contacto")
 
 

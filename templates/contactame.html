@@ -6,8 +6,66 @@
 </head>
 <body>
   {% extends 'base.html' %}
-
-
+  {% block content %}
+  <section id="contact" class="contact section">
+    <div class="container section-title" data-aos="fade-up">
+      <span class="description-title">Contactame</span>
+      <h2>Contactame</h2>
+      <p>Ingresa tus datos en el formulario para ponerte en contacto</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Direccion</h3>
+            <p>Avenida Garay 510</p>
+          </div>
+        </div><!-- End Info Item -->
+        <div class="col-lg-4">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
+            <i class="bi bi-telephone"></i>
+            <h3>Numero de telefono</h3>
+            <p>2352 123456</p>
+          </div>
+        </div><!-- End Info Item -->
+        <div class="col-lg-4">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-envelope"></i>
+            <h3>Correo Electronico</h3>
+            <p>edgartu@outlook.com</p>
+          </div>
+        </div>
+      </div>
+      <form action="/contactame" method="post" id="form-contact" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Nombre y Apellido">
+          </div>
+          <div class="col-md-6 ">
+            <input type="email" class="form-control" name="email" placeholder="Correo electronico">
+          </div>
+          <div class="col-md-12">
+            <input type="text" class="form-control" name="subject" placeholder="Asunto">
+          </div>
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="6" placeholder="Mensaje"></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="alert alert-primary">
+                  {{ messages[0] }}
+                </div>
+              {% endif %}
+            {% endwith %}
+            <button type="submit">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  {% endblock %}
 
 </body>
 </html>

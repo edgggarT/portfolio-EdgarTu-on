@@ -7,7 +7,47 @@
 </head>
 <body>
   {% extends 'base.html' %}
-
+  {% block content %}
+  <section id="services" class="services section">
+    <div class="container section-title" data-aos="fade-up">
+      <span class="description-title">Mis Lenguajes & Frameworks</span>
+      <h2>Mis Lenguajes & Frameworks</h2>
+      <p>Estos son algunos de los lenguajes y Frameworks que utilizo:</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="https://img.icons8.com/?size=512&id=12584&format=png" alt=""></i></div>
+            <h4><a href="" class="stretched-link">Python</a></h4>
+            <p>Lenguaje donde creo la logica y el rutado</p>
+          </div>
+        </div><!-- End Service Item -->
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="https://icons.iconarchive.com/icons/icons8/ios7/512/Data-Database-icon.png" alt=""></div>
+            <h4><a href="" class="stretched-link">MySQL & SQL</a></h4>
+            <p>Creacion y gestion de las bases de datos</p>
+          </div>
+        </div><!-- End Service Item -->
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/flask-qvsfwhwywucb6zv0d7ce.png/flask-1byb2jlw6nwim4nx2248xg.png?_a=DAJFJtWIZAAC" alt=""></i></div>
+            <h4><a href="" class="stretched-link">Flask</a></h4>
+            <p>Framework que se integra en python para facilitar la creacion de la pagina</p>
+          </div>
+        </div><!-- End Service Item -->
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon"><img src="https://raw.githubusercontent.com/themedotid/bootstrap-icon/HEAD/docs/bootstrap-icon-css.png" alt=""></i></div>
+            <h4><a href="" class="stretched-link">Bootstrap</a></h4>
+            <p>Framework que facilita la creacion del Frontend</p>
+          </div>
+        </div><!-- End Service Item -->
+      </div>
+    </div>
+  </section>
+  {% endblock %}
   
 </body>
 </html>

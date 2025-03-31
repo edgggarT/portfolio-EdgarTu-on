@@ -6,8 +6,69 @@
 </head>
 <body>
     {% extends 'base.html' %}
+    {% block content %}
+    <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="description-title">ACERCA DE MI</span>
+          <h2>ACERCA DE MI</h2>
+          <p>Estudiante de analista de sistemas con mucho interes en el desarrollo web. </p>  
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="https://wallpapercave.com/wp/wp4932285.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 content">
+              <h2>UI/UX Diseñador &amp; Desarrollador Web.</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>25/06/2005</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Pagina:</strong> <span>www.EdgarTuñon.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Telefono:</strong> <span>2352 123456</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Chacabuco, Buenos Aires</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>19</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Pais:</strong> <span>Argentina</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>edgartu@outlook.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Estudiante</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                Soy un apasionado desarrollador en constante evolución, comprometido con el aprendizaje continuo y la mejora de mis habilidades en el campo de la programación. Actualmente, estoy dedicado a ampliar mis conocimientos en diversas tecnologías y lenguajes de programación, con el objetivo de convertirme en un profesional versátil y eficiente.
 
+                Mi enfoque principal es el desarrollo de soluciones innovadoras y eficientes, siempre buscando mejorar la experiencia del usuario y optimizar los procesos. Me apasiona la colaboración en equipo y estoy dispuesto a participar en proyectos que me permitan crecer tanto personal como profesionalmente.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="resume" class="resume section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Educacion</h3>
+              <div class="resume-item">
+                <h4>Analista de sistemas</h4>
+                <h5>2023 - 2025</h5>
+                <p><em>ISFT N° 132, Chacabuco, Buenos Aires</em></p>
+                <p>Mi experiencia en institucion me permitió desarrollar una sólida base en programacion y comunicación, lo que ha sido crucial para mi profecionalizacion.</p>
+              </div><!-- Edn Resume Item -->
+              <div class="resume-item">
+                <h4>Escuela Secundaria</h4>
+                <h5>2018 - 2022</h5>
+                <p><em>EESN N°4, Chacabuco, Buenos Aires</em></p>
+                <p>durante el transcurso de aprendizaje que me brindo la secundaria pude desarrollar conocimientos claves y habilidades de investigación, lo que ha sido crucial para mi crecimiento académico y personal.</p>
+              </div><!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section><!-- /Resume Section -->
 
-
+    {% endblock %}
 </body>
 </html>
