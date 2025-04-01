@@ -378,8 +378,7 @@ SECTION STYLE
 
 .section-title {
   text-align: center;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 20px;
   position: relative;
 }
 .section-title h2 {
@@ -387,7 +386,7 @@ SECTION STYLE
   font-weight: 700;
   text-transform: uppercase;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   padding-bottom: 0;
   position: relative;
   z-index: 2;
@@ -429,7 +428,8 @@ ACERCA DE STYLE
 
 .about .content {
   border: 2px solid rgb(181, 181, 181);
-  border-radius: 10px;
+  height: 403px;
+  border-radius: 6px;
 }
 .about .content h2 {
   font-weight: 700;
@@ -440,8 +440,14 @@ ACERCA DE STYLE
   list-style: none;
   padding: 0;
 }
+
+.about .container img {
+  width: 400px;
+}
+
+
 .about .content ul li {
-  margin-bottom: 30px;
+  margin-bottom: 3px;
   display: flex;
   color: black;
   align-items: center;
@@ -453,13 +459,14 @@ ACERCA DE STYLE
   font-family: Arial, Helvetica, sans-serif;
 }
 .about p {
-  font-size: 26px;
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(91, 89, 89);
 } 
 .about .content span {
   font-size: 15px ;
 }
+
 .about .content ul i {
   margin-right: 5px;
   font-size: 16px;
@@ -480,8 +487,8 @@ INICIO DE RESUMEN
   color: black;
   font-size: 26px;
   font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .resume .resume-item {
@@ -489,7 +496,7 @@ INICIO DE RESUMEN
   margin-top: -2px;
   border-left: 2px solid #ffbb27;
   position: relative;
-  margin: 20px;
+  margin: 10px;
 }
 
 .resume .resume-item h4 {
@@ -513,6 +520,7 @@ INICIO DE RESUMEN
 
 .resume .resume-item p {
   color: black;
+  font-size: 12px;
 }
 
 .resume .resume-item ul {
@@ -673,6 +681,11 @@ CONTACTO
 */
 
 
+.contact .container {
+  margin-bottom: 25px;
+}
+
+
 .contact .info-item i {
   font-size: 20px;
   color: var(--accent-color);
@@ -710,7 +723,7 @@ CONTACTO
 .contact .php-email-form {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin-top: 30px;
+  margin-top: 43px;
 }
 
 @media (max-width: 575px) {
@@ -724,7 +737,7 @@ CONTACTO
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
-  box-shadow: none;
+  box-shadow: n                                                                                                                     one;
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
